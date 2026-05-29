@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Pearl & Platinum — light theme tokens (consumed by ScrollCanvas + canvas bg) */
+  --bg-color: #FBFBFA;
+  --fg-color: #3A3D45;
+  --surface: #EAEAEA;
+  --accent: #9CA0A8;
+  --contrast: #3A3D45;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--contrast);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Section vertical rhythm */
+.section-pad {
+  padding-top: clamp(48px, 6vw, 96px);
+  padding-bottom: clamp(48px, 6vw, 96px);
+}
+
+/* Hairline rule used across the architectural-product layout */
+.hairline {
+  border-color: rgba(58, 61, 69, 0.14);
+}
+
+::selection {
+  background: #3A3D45;
+  color: #FBFBFA;
+}
